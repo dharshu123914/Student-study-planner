@@ -1,0 +1,188 @@
+/* Basic page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f3fa;
+    color: #252747;
+}
+
+/* Header */
+header {
+    background-color: #5546a5;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5546a5;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5546a5;
+}
+
+/* Dashboard cards */
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #e9e5ff;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 30px;
+    color: #5546a5;
+}
+
+/* Input fields */
+input {
+    padding: 12px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    background-color: #5546a5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #372b78;
+}
+
+/* Subject and task lists */
+li {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #f2f0ff;
+    border-radius: 6px;
+    list-style-position: inside;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5546a5;
+    color: white;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+#assignments input {
+    margin: 10px 5px;
+}
+
+#assignments li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#timetable input {
+    margin: 10px 5px;
+}
+
+#timetable p {
+    margin: 8px 5px;
+    color: #5546a5;
+    font-weight: bold;
+}
+
+#timetable li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#exams input {
+    margin: 10px 5px;
+}
+
+#exams p {
+    margin: 8px 5px;
+    color: #5546a5;
+    font-weight: bold;
+}
+
+#exams li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#progress p {
+    margin: 12px 5px;
+    font-weight: bold;
+    color: #5546a5;
+}

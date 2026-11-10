@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Study Planner</h1>
+        <p>Organize your studies. Achieve your goals.</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#tasks">Study Tasks</a>
+    </nav>
+
+    <main>
+        <section id="progress">
+    <h2>My Study Progress</h2>
+
+    <p>Total Subjects: <span id="totalSubjects">0</span></p>
+
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+
+    <p>Completed Tasks: <span id="completedTasks">0</span></p>
+
+    <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+
+    <p>Progress: <span id="progressPercent">0%</span></p>
+
+    <button onclick="updateProgress()">Refresh Progress</button>
+</section>
+        <section id="exams">
+    <h2>My Exam Reminders</h2>
+
+    <input type="text" id="examName"
+        placeholder="Exam name">
+
+    <input type="text" id="examSubject"
+        placeholder="Subject name">
+
+    <p>Exam Date</p>
+    <input type="date" id="examDate">
+
+    <button onclick="addExam()">Add Exam</button>
+
+    <ul id="examList"></ul>
+</section>
+        <section id="timetable">
+    <h2>My Daily Timetable</h2>
+
+    <input type="text" id="timeSubject"
+        placeholder="Enter subject name">
+
+    <p>Start Time</p>
+    <input type="time" id="startTime">
+
+    <p>End Time</p>
+    <input type="time" id="endTime">
+
+    <button onclick="addTimetable()">
+        Add Schedule
+    </button>
+
+    <ul id="timetableList"></ul>
+</section>
+<section id="assignments">
+    <h2>My Assignment Tracker</h2>
+
+    <input type="text" id="assignmentName"
+        placeholder="Assignment title">
+
+    <input type="text" id="assignmentSubject"
+        placeholder="Subject name">
+
+    <p>Submission Date</p>
+
+    <input type="date" id="assignmentDate">
+
+    <button onclick="addAssignment()">
+        Add Assignment
+    </button>
+
+    <ul id="assignmentList"></ul>
+</section>
+        <section id="dashboard">
+            <h2>My Dashboard</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 id="subjectCount">0</h3>
+                    <p>Total Subjects</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="taskCount">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="completedCount">0</h3>
+                    <p>Completed Tasks</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subjects">
+            <h2>My Subjects</h2>
+            <input type="text" id="subjectInput"
+                placeholder="Enter subject name">
+            <button onclick="addSubject()">Add Subject</button>
+            <ul id="subjectList"></ul>
+        </section>
+
+        <section id="tasks">
+            <h2>My Study Tasks</h2>
+            <input type="text" id="taskInput"
+                placeholder="Enter your study task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Study Planner | CAP Individual Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
